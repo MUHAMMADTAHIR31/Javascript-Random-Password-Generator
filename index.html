@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		  <title>Password-Generator</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		  <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		  <script src="script.js"></script>
+		  <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	
+	<div data-role="page">
+    
+      <div data-role="header">
+        <h1>Password Generator</h1>
+      </div>
+
+     
+      <div data-role="navbar">
+        <ul>
+          <li>
+            
+            <a href="index.html" rel="external" class="ui-btn-active ui-state-persist">
+              Home</a
+            >
+          </li>
+          <li>
+           
+             <a href="information.html" rel="external"  class="ui-btn"  >Second Page</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+		  <div data-role="main" class="ui-content">
+		  
+			  <div class="wrape">
+			  
+				  <div class="ui-field-contain">
+					  <label for="no_of_pass" >No of Passwords</label>
+					  <input type="number" class="form-control mb-5" id="no_of_pass" name="no_of_pass" placeholder="No of Passwords">
+				  </div>
+				  <div class="ui-field-contain">
+					  <label  for="length_of_pass" >Length of Password</label>
+					  <input type="number" class="form-control mb-5" id="length_of_pass" name="length_of_pass" placeholder="Length of Password">
+				</div>
+				<div class="ui-field-contain">
+					<fieldset data-role="controlgroup" data-type="horizontal">
+				
+						  <button type="button" id="generate" name="generate" class="ui-btn-active">Generate</button>
+						  <button type="button" id="clear" name="clear" class="ui-btn">Clear</button>
+					  
+					</fieldset>
+				</div>
+
+				
+				 <!--table start-->
+					<table data-role="table" id="temp-table" style="display:none;" data-mode="reflow" class="ui-responsive table-stroke">
+						<thead class="text-center thead-dark">
+						  <tr>
+								<th data-priority="1" >SNO</th>
+								<th data-priority="1" >Password</th>
+						  </tr>
+						</thead>
+						<tbody id="dataTable" class="text-center">
+						</tbody>
+				   </table>
+				 
+				  <!--table end-->
+			  </div>
+		  </div>
+	  </div>
+
+      
+      <div data-role="footer" class="footer">
+         <p>Copyright ©  
+			<script>
+			  document.write(new Date().getFullYear())
+			</script>
+		   All rights reserved | Password-Generator </p>
+      </div>
+    </div>
+
+		
+	
+	
+	</body>
+</html>

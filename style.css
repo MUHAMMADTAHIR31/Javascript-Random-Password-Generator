@@ -1,0 +1,38 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+.container {
+	width: 70%;
+	height: auto;
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	border-radius: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	
+	
+}
+
+.wrape {
+	
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
